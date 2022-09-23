@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'login.css' %}">
+    <script defer src="{% static 'signin.js' %}"></script>
+    <title>Login</title>
+</head>
+<body>
+<main>
+    <div class="back">
+        <div class="create">
+            <div id="content_body">
+                <form action="login" mehtod = "POST" id = "signin-form">
+                    {% csrf_token %}
+                    <div id="signup_body">
+                        <div class="signup bolder">Log in to SocialM</div>
+                        <div class="input_box">
+                            <input type="text" class="input_body inp usrnm" name="username" placeholder="Username" autocomplete="off" required>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" class="input_body inp pswrd"  name="password" placeholder="Password" autocomplete="off" required>
+                            <span class="star"><small></small></span>
+                        </div>
+                        <div class="input_box signb">
+                            <input type="submit" class="signbut bolder" value = "Log in" disabled>
+                        </div>
+                    </div>
+                </form>
+                <div class="sign_in">
+                    Dont have an Accont?
+                    <a href="">Sign up?</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".input").forEach(input => {
+        input.addEventListener("input", () => {
+            if ((document.querySelector('.usrnm').value.length === 0) || (document.querySelector('.pswrd').value.length === 0)) {
+                document.querySelector('input[type="submit"]').disabled = true;
+                console.log(document.querySelector('input[type="submit"]').disabled == true);
+            }
+            else {
+                document.querySelector('input[type="submit"]').disabled = false;
+                onsole.log(document.querySelector('input[type="submit"]').disabled == true);
+            }
+        });
+    });
+})</script>
+</html>

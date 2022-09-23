@@ -1,0 +1,148 @@
+body{
+    background-color: #f1faee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back{
+    background-color:#f1faee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-radius: 2%;
+    padding : 15px;
+    margin-top: 180px;
+    border: 5px solid #a8dadc;
+    box-shadow: 3px 3px 3px 3px #a8dadc;
+}
+body {
+    margin: 0;
+    font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
+    
+}
+
+#content_body {
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+
+#content {
+    margin: 0;
+    width:980px;
+    padding-top:10px;
+}
+
+.signb{
+    text-align: center;
+}
+#signup_body {
+    display:inline-block;
+    vertical-align:top;
+    width:399px;
+    height:200px;
+}
+
+.signup {
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    font-weight:500px;
+    margin-bottom:10px;
+    color: #3c3744;
+}
+
+.bolder {
+    font-family: 'Open Sans',sans-serif;
+    color:#333;
+}
+.input_box {
+    display: inline-block;
+    width:399px;
+}
+.signbut:disabled{
+    cursor: default;
+    background: #25a18e;
+}
+.input_body {
+    display: inline-block;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1px solid #bdc7d8;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color:#333;
+    margin-bottom:10px;
+    border: 3px solid #a8dadc;
+    background-color: #f1faee;
+}
+::-webkit-input-placeholder {
+    color: #999;
+}
+::-moz-placeholder {
+    color: #999;  
+}
+:-ms-input-placeholder {  
+    color: #999;  
+}
+
+
+.inp {
+    width:377px;
+}
+
+.selectbody {
+    display: inline-block;
+    height:30px;
+    font-size: 13px;
+    border: 1px solid #bdc7d8;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color:#141823;
+}
+input:focus {
+	outline: none;
+  	border: 3px solid #35BCB3;
+}
+.signbut {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:#fff;
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+    border-radius: 15px;
+    background: #25a18e;
+    -webkit-box-shadow: inset 0 1px 1px #a4e388;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor:pointer;
+    border: 3px solid #a8dadc;
+}
+.signbut:hover {
+    background:#49c617;
+}
+.create {
+    border-top: 1px solid #a0a9c0;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 15px;
+    border: none;
+}
+.sign_in{
+    position: absolute;
+    bottom: 10px;
+    left: 97px;
+}
+.sign_in a{
+    text-decoration: none;
+    color: #1877f2;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+}
