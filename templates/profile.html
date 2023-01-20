@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' %}"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="{% static 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' %}" />
+    <link href="{% static 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' %}" rel="stylesheet" />
+    <script src="{% static '/profile/profile.js' %}"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="header-navbar">
+                <div class="logo">
+                    <a href="{% url 'index' %}">SocialM</a>
+                </div>
+                <form action="#">
+                    <div class="searchBox">
+                        <input type="search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+                <div class="iconBox">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <a href="{% url 'profile' user.username %}" target="_blank">
+                        <div class="small-profilepic" style="background-image: url(/main/5883207.jpg)"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="media-section">
+            <div class="left">
+
+                <div class="left_items" id="profile_settings">
+                    <div class="left_icons"><span class="material-symbols-outlined">
+                            person
+                        </span></div>
+                    <div class="profile"><a href="{% url 'profile' user.username %}">Profile</a></div>
+                </div>
+                <div class="left_items">
+                    <div class="left_icons"><i class="fa-solid fa-house"></i></div>
+                    <a href="{% url 'index' %}">Home</a>
+                </div>
+                <div class="left_items">
+                    <div class="left_icons"><span class="material-symbols-outlined">
+                            edit
+                        </span></i></div>
+                    <a href="">Edit Profile</a>
+                </div>
+                <div class="left_items">
+                    <div class="left_icons"><span class="material-symbols-outlined">
+                            manage_accounts
+                        </span></div>
+                    <a href="">Account Settings</a>
+                </div>
+
+                <div class="left_items">
+                    <div class="left_icons"><span class="material-symbols-outlined">
+                            logout
+                        </span></div>
+                    <a href="">Log Out</a>
+                </div>
+
+
+
+            </div>
+            <div class="center">
+                <div class="profile">
+                    <div class="profile_image" style="background-image: url(/main/5883207.jpg)"></div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+
+    </main>
+</body>
+<script>
+</script>
+
+</html>
